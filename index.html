@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Uifry</title>
 </head>
-<body>
+<body class="bg-[url('./assets/Rectangle.png')] bg-white bg-blend-color-burn">
     <!-- Navbar -->
     <nav class="flex justify-around mt-[50px]">
         <ul class="flex gap-[20px] text-[1.25rem] font-medium">
@@ -20,11 +20,15 @@
         </ul>
         <button class="bg-black text-white w-[180px] h-[60px] font-medium text-[1.125rem] rounded">Download</button>
     </nav>
+
+
+    <!-- mian part -->
     <main>
         <!-- Hero Section -->
         <section class="w-full flex justify-end">
+            <img class="absolute top-[60px] left-[200px] z-0" src="./assets/bgColor1.png">
             <div class="w-[40%] flex flex-col self-end gap-[20px]">
-                <h3 class="font-bold text-[4rem]">Make The Best Financial Decisions</h3>
+                <h3 class="font-bold text-[4rem] z-10">Make The Best Financial Decisions</h3>
                 <p class="text-[1.25rem] font-medium opacity-50">Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
                 <div class="flex w-[65%] justify-between">
                     <button class="bg-black text-white w-[180px] h-[60px] font-medium text-[1.125rem] rounded">Get Started →</button>
@@ -40,10 +44,12 @@
 
         <!-- Features Section -->
         <section class="flex items-center">
-            <div class="w-[50%]">
+            <img class="absolute z-0 top-[1075px]" src="./assets/bgcolor3.png">
+            <img class="absolute right-[0px] z-0" src="./assets/bgcolor2.png">
+            <div class="w-[50%] z-10">
                 <img class="w-full" src="./assets/featuresImg.png" alt="features">
             </div>
-            <div class="w-[50%] flex flex-col gap-[30px]">
+            <div class="w-[50%] flex flex-col gap-[30px] z-10">
                 <div>
                     <p class="text-[1.25rem] font-medium text-[#FF5555]">FEARTURES</p>
                     <h2 class="text-[3rem] font-bold">Uifry Premium</h2>
@@ -91,12 +97,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-[50%]">
+                
+                <img class="absolute z-0 right-[315px]" src="./assets/bgColor4.png ">
+                <div class="w-[50%] z-10">
                     <img class="w-full" src="./assets/advPhone1.png" alt="Image">
                 </div>
             </div>
             <div class="flex w-[80%] items-center">
-                <div class="w-[50%]">
+                <img class="absolute z-0 left-[195px]" src="./assets/bgColor5.png ">
+                <div class="w-[50%] z-10">
                     <img class="w-full" src="./assets/advPhone2.0.png" alt="Image">
                 </div>
                 <div class="w-[50%]">
@@ -121,7 +130,8 @@
                 <h3 class="text-[3rem] font-bold">What Our Users Say About Us?</h3>
             </div>
             <div class="flex items-center justify-center w-[80%]">
-                <div class="w-[50%]">
+                <img class="absolute z-0 left-[100px]"  src="./assets/bgColor6.png">
+                <div class="w-[50%] z-10">
                     <img class="w-full" src="./assets/testimonailPic.png" alt="image">
                 </div>
                 <div class="w-[50%] flex flex-col items-start justify-center">
@@ -172,15 +182,79 @@
         </section>
 
         <!-- Last section -->
-        <section>
-            <div>
-                <div>
-                    <h3>Ready To Get Started?</h3>
-                    <p>Risus habitant leo egestas mauris diam eget morbi tempus vulputate.</p>
-                    <button>Download <img src="./assets/appleIcon.png" alt="icno"></button>
+        <img class="absolute z-0" src="./assets/bgColor7.png">
+        <section class="z-10 w-full flex justify-center items-center mt-[200px]">
+            <div class="z-10 w-[80%] h-[508px] flex pt-[30px] pl-[85px] justify-start items-center bg-cover bg-[url('./assets/lstPic.png')] bg-no-repeat">
+                <div class="text-white w-[50%] flex flex-col gap-[30px]">
+                    <h3 class="font-bold text-[3rem]">Ready To Get Started?</h3>
+                    <p class="font-[400] text-[1.25rem]">Risus habitant leo egestas mauris diam eget morbi tempus vulputate.</p>
+                    <button class="flex items-center justify-center rounded-lg gap-[20px] w-[208px] h-[60px] bg-white text-black font-medium text-[1.25rem]">
+                        Download 
+                        <img src="./assets/appleIcon.png" alt="icno">
+                    </button>
                 </div>
             </div>
         </section>
     </main>
+
+
+    <!-- footer part -->
+    <footer class="mt-[200px] w-full flex flex-col items-center gap-[30px]">
+        <div class="w-[80%] flex flex-wrap justify-between gap-[10x] border-b pb-[100px]">
+            <div class="min-w-[200px]">
+                <ul class="flex flex-col gap-[20px]">
+                    <li>
+                        <img src="./assets/logo.png" alt="logo">
+                    </li>
+                    <li class="flex font-medium text-[1rem] gap-[10px]">
+                        <img src="./assets/emailIcon.png" alt="icon"> 
+                        Help@Frybix.com
+                    </li>
+                    <li class="flex font-medium text-[1rem] gap-[10px]">
+                        <img src="./assets/mobileIcon.png" alt="icon">
+                        +1234567890
+                    </li>
+                </ul>
+            </div>
+            <div class="min-w-[200px]">
+                <ul class="font-medium text-[1rem] flex flex-col gap-[20px]">
+                    <li class="font-medium text-[2rem] ">Links</li>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Bookings</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="min-w-[200px]">
+                <ul class="font-medium text-[1rem] flex flex-col gap-[20px]">
+                    <li class="font-medium text-[2rem] ">Legal</li>
+                    <li>Terms Of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+            <div class="min-w-[200px]">
+                <ul class="font-medium text-[1rem] flex flex-col gap-[20px]">
+                    <li class="font-medium text-[2rem] ">Product</li>
+                    <li>Take Tour</li>
+                    <li>Live Chat</li>
+                    <li>Reviews</li>
+                </ul>
+            </div>
+            <div class="min-w-[200px]">
+                <ul class="font-medium text-[1rem] flex flex-col gap-[20px]">
+                    <li class="font-medium text-[2rem] ">Newsletter</li>
+                    <li>Stay Up To Date</li>
+                    <li class="bg-white border p-2 rounded-lg">
+                        <input placeholder="Your email" class="text p-3">
+                        <button class="bg-black text-white w-[160px] h-[61px] rounded-lg">Subscribe</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pb-[30px]">
+            <p class="font-medium text-[1rem]">Copyright 2022 uifry.com all rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
